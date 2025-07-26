@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container } from "@mui/material";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Donate from "./pages/Donate";
-import OurWork from "./pages/OurWork";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Donate from "./Pages/Donate";
+import OurWork from "./Pages/OurWork";
 
 const App = () => {
   return (
