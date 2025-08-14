@@ -77,7 +77,7 @@ const Header = () => {
               sx={{
                 fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 fontWeight: 600,
-                color: '#004e72',
+                color: theme.palette.primary.dark,
                 lineHeight: 1.2,
               }}
             >
@@ -86,7 +86,7 @@ const Header = () => {
             <Typography
               sx={{
                 fontSize: { xs: "10px", sm: "11px", md: "12px" },
-                color: '#004e72'
+                color: theme.palette.primary.dark
               }}
             >
               Welfare Foundation
@@ -106,7 +106,7 @@ const Header = () => {
               <Button
                 key={item.label}
                 sx={{
-                  backgroundColor: theme.palette.primary.main,
+                  backgroundColor: theme.palette.primary.dark,
                   color: "white",
                   padding: "12px 40px",
                 }}
@@ -119,7 +119,7 @@ const Header = () => {
                 key={item.label}
                 sx={{
                   fontSize: "18px",
-                  color: "#2e7086",
+                  color: theme.palette.primary.dark,
                   fontWeight: 600,
                   cursor: "pointer",
                 }}
