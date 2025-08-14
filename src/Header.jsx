@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "./assets/Logo.png";
+import BhagyaRachLogo from "./assets/BhagyaRachLogo.jpg";
 import {
   Box,
   Button,
@@ -11,6 +11,7 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  useTheme,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
@@ -25,6 +26,7 @@ const navigationItems = [
 const Header = () => {
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const theme = useTheme()
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -41,7 +43,7 @@ const Header = () => {
       <Box
         sx={{
           height: "50px",
-          bgcolor: "#193c2b",
+          bgcolor: theme.palette.primary.main, //"#2e7086", // -Theme Colour
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -69,13 +71,13 @@ const Header = () => {
       >
         {/* Logo and Name */}
         <Stack direction="row" alignItems="center" gap="10px">
-          <img width="50px" src={Logo} alt="Logo" />
+          <img width="50px" src={BhagyaRachLogo} alt="Logo" />
           <Box>
             <Typography
               sx={{
                 fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 fontWeight: 600,
-                color: "#193c2b",
+                color: '#004e72',
                 lineHeight: 1.2,
               }}
             >
@@ -84,7 +86,7 @@ const Header = () => {
             <Typography
               sx={{
                 fontSize: { xs: "10px", sm: "11px", md: "12px" },
-                color: "#193c2b",
+                color: '#004e72'
               }}
             >
               Welfare Foundation
@@ -104,7 +106,7 @@ const Header = () => {
               <Button
                 key={item.label}
                 sx={{
-                  backgroundColor: "#193c2b",
+                  backgroundColor: theme.palette.primary.main,
                   color: "white",
                   padding: "12px 40px",
                 }}
@@ -117,7 +119,7 @@ const Header = () => {
                 key={item.label}
                 sx={{
                   fontSize: "18px",
-                  color: "#193c2b",
+                  color: "#2e7086",
                   fontWeight: 600,
                   cursor: "pointer",
                 }}
@@ -148,7 +150,7 @@ const Header = () => {
             alignItems="center"
             mb={4}
           >
-            <img width="50px" src={Logo} alt="Logo" />
+            <img width="50px" src={BhagyaRachLogo} alt="Logo" />
           </Box>
 
           {/* Navigation Items */}
