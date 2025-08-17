@@ -169,7 +169,7 @@ const Header = () => {
                     primaryTypographyProps={{
                       fontWeight: "bold",
                       fontSize: "20px",
-                      color: "#193c2b",
+                      color: "#173760",
                       textAlign: "left",
                     }}
                   />
