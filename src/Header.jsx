@@ -26,7 +26,8 @@ const navigationItems = [
 const Header = () => {
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const theme = useTheme()
+  const theme = useTheme();
+  console.log(theme.palette.primary.dark)
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -43,7 +44,7 @@ const Header = () => {
       <Box
         sx={{
           height: "50px",
-          bgcolor: theme.palette.primary.main, //"#2e7086", // -Theme Colour
+          bgcolor: '#173760', 
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -52,7 +53,7 @@ const Header = () => {
         <Typography
           sx={{
             color: "white",
-            fontSize: { xs: "11px", sm: "11px", md: "14px" },
+            fontSize: { xs: "10px", sm: "11px", md: "14px" },
             textAlign: "center",
           }}
         >
@@ -77,7 +78,7 @@ const Header = () => {
               sx={{
                 fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 fontWeight: 600,
-                color: theme.palette.primary.dark,
+                color: '#173760',
                 lineHeight: 1.2,
               }}
             >
@@ -86,7 +87,7 @@ const Header = () => {
             <Typography
               sx={{
                 fontSize: { xs: "10px", sm: "11px", md: "12px" },
-                color: theme.palette.primary.dark
+                color: '#173760'
               }}
             >
               Welfare Foundation
@@ -106,7 +107,7 @@ const Header = () => {
               <Button
                 key={item.label}
                 sx={{
-                  backgroundColor: theme.palette.primary.dark,
+                  backgroundColor: '#173760',
                   color: "white",
                   padding: "12px 40px",
                 }}
@@ -119,7 +120,7 @@ const Header = () => {
                 key={item.label}
                 sx={{
                   fontSize: "18px",
-                  color: theme.palette.primary.dark,
+                  color: '#173760',
                   fontWeight: 600,
                   cursor: "pointer",
                 }}
