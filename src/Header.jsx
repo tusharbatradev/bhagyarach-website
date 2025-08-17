@@ -18,8 +18,8 @@ import { useNavigate } from "react-router-dom";
 
 const navigationItems = [
   { label: "HOME", path: "/" },
-  { label: "ABOUT", path: "/about" },
-  { label: "CONTACT", path: "/contact" },
+  { label: "ABOUT US", path: "/about" },
+  { label: "CONTACT US", path: "/contact" },
   { label: "DONATE", path: "/donate", isButton: true },
 ];
 
@@ -27,7 +27,7 @@ const Header = () => {
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
-  console.log(theme.palette.primary.dark)
+  console.log(theme.palette.primary.dark);
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -44,7 +44,7 @@ const Header = () => {
       <Box
         sx={{
           height: "50px",
-          bgcolor: '#173760', 
+          bgcolor: "#173760",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -54,11 +54,13 @@ const Header = () => {
           sx={{
             color: "white",
             fontSize: { xs: "10px", sm: "11px", md: "14px" },
-            textAlign: "center",
+            textAlign: "center"
           }}
         >
-          अनुकरणीय रहस्यमयी चेतना जागरणार्थं, सर्व बहुउद्देश्य उपक्रमाः यथार्थाः
-          भविष्यति
+          <marquee  direction="left">
+            अनुकरणीय रहस्यमयी चेतना जागरणार्थ सर्वे बहुउद्देश्यी पहलं
+            यथार्थाः हिते ॥
+          </marquee>
         </Typography>
       </Box>
 
@@ -78,7 +80,7 @@ const Header = () => {
               sx={{
                 fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 fontWeight: 600,
-                color: '#173760',
+                color: "#173760",
                 lineHeight: 1.2,
               }}
             >
@@ -87,7 +89,7 @@ const Header = () => {
             <Typography
               sx={{
                 fontSize: { xs: "10px", sm: "11px", md: "12px" },
-                color: '#173760'
+                color: "#173760",
               }}
             >
               Welfare Foundation
@@ -107,7 +109,7 @@ const Header = () => {
               <Button
                 key={item.label}
                 sx={{
-                  backgroundColor: '#173760',
+                  backgroundColor: "#173760",
                   color: "white",
                   padding: "12px 40px",
                 }}
@@ -120,7 +122,7 @@ const Header = () => {
                 key={item.label}
                 sx={{
                   fontSize: "18px",
-                  color: '#173760',
+                  color: "#173760",
                   fontWeight: 600,
                   cursor: "pointer",
                 }}
@@ -167,7 +169,7 @@ const Header = () => {
                     primaryTypographyProps={{
                       fontWeight: "bold",
                       fontSize: "20px",
-                      color: "#193c2b",
+                      color: "#173760",
                       textAlign: "left",
                     }}
                   />
