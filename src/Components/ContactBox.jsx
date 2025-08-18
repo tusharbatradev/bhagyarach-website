@@ -50,6 +50,11 @@ const ContactBox = ({ icon: Icon, title, subtitle, description }) => (
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
+        textDecoration: "none", 
+        "& a": {
+          color: "inherit", 
+          textDecoration: "none",
+        },
       }}
     >
       {description || ""}
