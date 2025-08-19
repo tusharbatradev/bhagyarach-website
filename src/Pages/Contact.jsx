@@ -55,8 +55,7 @@ const Contact = () => {
           subtitle="Bhagya Rach Welfare Foundation"
           description={
             <>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
-              corrupti! <br /> Bhopal, Madhya Pradesh
+             22/1 Shirdipuram Mandakini Colony, <br /> Bhopal, Madhya Pradesh
             </>
           }
         />
@@ -68,11 +67,9 @@ const Contact = () => {
           subtitle="Reach Us Anytime"
           description={
             <>
-              Available on Call & WhatsApp
-              <br />
               +91 95820 20916
               <br />
-              +91 XXXXX XXXXX
+              +91 99265 71540
             </>
           }
         />
@@ -82,7 +79,7 @@ const Contact = () => {
           icon={MailIcon}
           title="Mail Us"
           subtitle="For Queries & Support"
-          description={<>hq@bhagyarach.org contact@bhagyarach.org</>}
+          description={<>contact@bhagyarach.org</>}
         />
       </Stack>
 

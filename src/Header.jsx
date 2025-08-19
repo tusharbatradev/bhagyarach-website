@@ -54,10 +54,10 @@ const Header = () => {
           sx={{
             color: "white",
             fontSize: { xs: "10px", sm: "11px", md: "14px" },
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
-          <marquee  direction="left">
+          <marquee direction="left">
             अनुकरणीय रहस्यमयी चेतना जागरणार्थ सर्वे बहुउद्देश्यी पहलं
             यथार्थाः हिते ॥
           </marquee>
@@ -74,7 +74,12 @@ const Header = () => {
       >
         {/* Logo and Name */}
         <Stack direction="row" alignItems="center" gap="10px">
-          <img width="50px" src={BhagyaRachLogo} alt="Logo" />
+          <img
+            onClick={() => navigate("/")}
+            width="50px"
+            src={BhagyaRachLogo}
+            alt="Logo"
+          />
           <Box>
             <Typography
               sx={{
@@ -145,7 +150,7 @@ const Header = () => {
 
       {/* Sidebar Drawer for mobile/tablet */}
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-        <Box width="250px" p={2}>
+        <Box sx={{ width: "250px", padding: 2 }}>
           {/* Logo */}
           <Box
             display="flex"
@@ -153,7 +158,7 @@ const Header = () => {
             alignItems="center"
             mb={4}
           >
-            <img width="50px" src={BhagyaRachLogo} alt="Logo" />
+            <img width="100px" src={BhagyaRachLogo} alt="Logo" />
           </Box>
 
           {/* Navigation Items */}
