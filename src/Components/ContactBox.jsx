@@ -12,7 +12,7 @@ const ContactBox = ({ icon: Icon, title, subtitle, description }) => (
       borderRadius: "16px",
       minWidth: "350px",
       maxWidth: "350px",
-      minHeight: "250px",
+      minHeight: "200px"
     }}
   >
     {/* Top Section (Icon) */}
