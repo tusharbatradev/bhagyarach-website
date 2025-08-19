@@ -57,7 +57,7 @@ const Header = () => {
             textAlign: "center",
           }}
         >
-          <marquee direction="left">
+          <marquee direction="left" scrollamount="3">
             अनुकरणीय रहस्यमयी चेतना जागरणार्थ सर्वे बहुउद्देश्यी पहलं
             यथार्थाः हिते ॥
           </marquee>
