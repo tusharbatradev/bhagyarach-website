@@ -31,7 +31,7 @@ const ContactBox = ({ icon: Icon, title, subtitle, description }) => (
         color: "white",
         fontSize: "18px",
         fontWeight: 500,
-        minHeight: "28px", // ✅ ensures same spacing across all boxes
+        minHeight: "28px", 
         display: "flex",
         alignItems: "center",
       }}
