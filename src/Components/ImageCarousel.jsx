@@ -1,26 +1,67 @@
 import { Stack } from "@mui/material";
 import React from "react";
 import MemberCard from "./MemberCard";
+import PriyanshuImage from "../assets/PriyanshuImage.png";
 
 const ImageCarousel = () => {
+  const members = [
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+    {
+      img: PriyanshuImage,
+      name: "Priyanshu Ranjan",
+      post: "Joint secretary",
+    },
+  ];
   return (
     <Stack
       sx={{
         display: "flex",
-        overflowX: "scroll",
+        flexWrap: "wrap",
         flexDirection: "row",
-        width: {sm : "400px", md : "600px", lg : "1500px"},
-        width: {sm : "400px", md : "600px", lg : "1500px"},
-        gap: "18px"
+        justifyContent: "center",
+        gap: "28px",
+        width: "100%",
+        px: "14%",
+        mx: "auto",
       }}
     >
-      <MemberCard />
-      <MemberCard />
-      <MemberCard />
-      <MemberCard />
-      <MemberCard />
-      <MemberCard />
-      <MemberCard />
+      {members?.map((member, index) => (
+        <MemberCard key={index} member={member} />
+      ))}
     </Stack>
   );
 };

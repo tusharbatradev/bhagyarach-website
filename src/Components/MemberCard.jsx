@@ -1,34 +1,36 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
-import PriyanshuImage from "../assets/PriyanshuImage.png";
 
-const MemberCard = () => {
+
+const MemberCard = ({member}) => {
   return (
-    <Stack>
+    <Stack
+      sx={{
+        width: {
+          xs: "100%",  
+          sm: "48%",   
+          md: "30%",
+          lg: "22%",    
+        },
+        flexShrink: 0,
+        alignItems: "center",
+      }}
+    >
       <img
         style={{
-          width: "300px",
-          height: "300px",
+          width: "100%",
+          height: "220px",
           borderRadius: "16px",
+          objectFit: "cover",
         }}
-        src={PriyanshuImage}
-        alt=""
+        src={member.img}
+        alt="Priyanshu Ranjan"
       />
-      <Typography
-        sx={{
-          fontSize: "18px",
-          fontWeight: 600,
-        }}
-      >
-        Priyanshu Ranjan
+      <Typography sx={{ fontSize: "16px", fontWeight: 600, mt: 1 }}>
+        {member.name}
       </Typography>
-      <Typography
-        sx={{
-          fontSize: "16px",
-          fontWeight: 400,
-        }}
-      >
-        Joint secretary
+      <Typography sx={{ fontSize: "14px", fontWeight: 400 }}>
+        {member.post}
       </Typography>
     </Stack>
   );
