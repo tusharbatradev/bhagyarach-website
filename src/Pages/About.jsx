@@ -19,7 +19,7 @@ const About = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          px: { xs: "20px", md: "300px" },
+          px: { xs: "20px", lg: "300px" },
           py: { xs: "12px", lg: "24px" },
         }}
       >
