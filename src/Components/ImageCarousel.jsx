@@ -7,7 +7,7 @@ const ImageCarousel = () => {
   const members = [
     {
       img: PriyanshuImage,
-      name: "Priyanshu Ranjan",
+      name: "Dr. Priyanshu Ranjan",
       post: "Joint secretary",
     },
     {

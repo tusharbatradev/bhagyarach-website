@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BhagyaRachLogo from "./assets/BhagyaRachLogo.jpg";
+import BhagyaRachLogo from "../assets/BhagyaRachLogo.jpg";
 import {
   Box,
   Button,
