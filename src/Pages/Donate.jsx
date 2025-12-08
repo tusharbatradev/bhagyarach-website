@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Stack, Box } from "@mui/material";
+import PaymentQR2 from "../assets/PaymentQR2.jpg";
 
 const Donate = () => {
   return (
@@ -9,7 +10,7 @@ const Donate = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: { xs: "12px", lg: "24px" }, //"24px",
+          padding: { xs: "12px", lg: "24px" }, 
         }}
       >
         <Typography
@@ -32,26 +33,17 @@ const Donate = () => {
           Your small contribution can make a big difference in someone's life.
         </Typography>
 
-        {/* Image Box */}
-
+        {/* QR Image */}
         <Box
           component="img"
           sx={{
             width: { xs: "250px", sm: "250px", lg: "350px" }, // responsive widths
+            mt : "16px",
+            mb : "16px"
           }}
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+          src={PaymentQR2}
           alt="QR Code"
         />
-
-        <Typography
-          sx={{
-            fontSize: { xs: "18px", lg: "22px" },
-            fontWeight: 500,
-            color: " #173760",
-          }}
-        >
-          Scan to Donate
-        </Typography>
 
         {/* Bank Account Details */}
         <Box
