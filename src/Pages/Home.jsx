@@ -6,6 +6,7 @@ import Education from "../assets/Education.jpg";
 import Environment from "../assets/Environment.jpg";
 import Health from "../assets/Health.jpg";
 import Opportunity from "../assets/Opportunity.jpg";
+import GalleryCarousel from "../Components/GalleryCarousel";
 
 const Home = () => {
   return (
@@ -14,23 +15,41 @@ const Home = () => {
       <Stack
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "center",
           alignItems: "center",
+          gap: { xs: 4, md: 6 },
           bgcolor: "#fdfcfd",
-          padding: "40px",
+          px: { xs: 3, sm: 4, md: 6, lg: 10 },
+          py: { xs: 6, sm: 8, md: 10 },
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            textAlign: { xs: "center", md: "left" },
+            maxWidth: "540px",
+          }}
+        >
           <Typography
             variant="h4"
             fontWeight="bold"
-            sx={{ mb: 2, lineHeight: 1.3 }}
+            sx={{
+              mb: 2,
+              lineHeight: 1.3,
+              fontSize: { xs: "28px", sm: "32px", md: "36px" },
+            }}
           >
             Building a brighter, more equitable future for all
           </Typography>
 
-          <Typography variant="body1" sx={{ mb: 3, color: "text.secondary" }}>
+          <Typography
+            variant="body1"
+            sx={{
+              mb: 3,
+              color: "text.secondary",
+              fontSize: { xs: "14px", sm: "15px", md: "16px" },
+            }}
+          >
             From education to health, environment, and community empowerment—
             our passion drives change.
           </Typography>
@@ -50,9 +69,26 @@ const Home = () => {
             Join Us
           </Button>
         </Box>
+
         {/* Image */}
-        <Box>
-          <img src={HomeImage} width={"500px"} />
+        <Box
+          sx={{
+            maxWidth: { xs: "100%", sm: "340px", md: "420px", lg: "520px" },
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Box
+            component="img"
+            src={HomeImage}
+            alt="Hero"
+            sx={{
+              width: "100%",
+              height: "auto",
+              objectFit: "contain",
+            }}
+          />
         </Box>
       </Stack>
 
@@ -116,7 +152,7 @@ const Home = () => {
         >
           Photo Gallery
         </Typography>
-        {/* <GalleryCarousel /> */}
+        <GalleryCarousel />
       </Stack>
 
       {/* Get Involved Section */}
