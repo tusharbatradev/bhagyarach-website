@@ -10,8 +10,8 @@ const About = () => {
         justifyContent: "center",
         alignItems: "center",
         gap: "24px",
-        width : "100%",
-        maxWidth : "100vw"
+        width: "100%",
+        maxWidth: "100vw",
       }}
     >
       <Stack
@@ -72,17 +72,6 @@ const About = () => {
 
       {/* Team Section */}
       <Stack>
-        <Typography
-          sx={{
-            fontSize: { xs: "32px", md: "40px", lg: "44px" },
-            fontWeight: 600,
-            color: "#173760",
-            textAlign: "center",
-          }}
-        >
-          Our Team
-        </Typography>
-    
         <ImageCarousel />
       </Stack>
     </Stack>
