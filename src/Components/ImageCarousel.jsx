@@ -60,7 +60,7 @@ const teamMembers = [
   },
   {
     img: ChaityaImg,
-    name: "Dr. Chaitya Jha",
+    name: "Dr. Chaitya Jain",
     post: "Public Health Consultant",
   },
   {
