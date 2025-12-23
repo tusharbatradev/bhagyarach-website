@@ -30,12 +30,12 @@ const mentors = [
 const teamMembers = [
   {
     img: BhasitaImg,
-    name: "Dr. Bhasita Sahu",
+    name: "Dr. Bhashita Sahu",
     post: "Ophthalmologist",
   },
   {
     img: JagratiImg,
-    name: "Dr. Jagrati Rehani",
+    name: "Dr. Jagriti Behrani",
     post: "Public Health Consultant",
   },
   {
