@@ -10,7 +10,7 @@ const Donate = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: { xs: "12px", lg: "24px" }, 
+          padding: { xs: "12px", lg: "24px" },
         }}
       >
         <Typography
@@ -38,8 +38,8 @@ const Donate = () => {
           component="img"
           sx={{
             width: { xs: "250px", sm: "250px", lg: "350px" }, // responsive widths
-            mt : "16px",
-            mb : "16px"
+            mt: "16px",
+            mb: "16px",
           }}
           src={PaymentQR2}
           alt="QR Code"
@@ -55,7 +55,7 @@ const Donate = () => {
           }}
         >
           <Typography sx={{ fontWeight: 600 }}>
-            Bank Name: <span style={{ fontWeight: 400 }}>XYZ Bank</span>
+            Bank Name: <span style={{ fontWeight: 400 }}>IDFC Bank</span>
           </Typography>
           <Typography sx={{ fontWeight: 600 }}>
             Account Name:{" "}
@@ -64,13 +64,13 @@ const Donate = () => {
             </span>
           </Typography>
           <Typography sx={{ fontWeight: 600 }}>
-            Account Number: <span style={{ fontWeight: 400 }}>1234567890</span>
+            Account Number: <span style={{ fontWeight: 400 }}>10255524995</span>
           </Typography>
           <Typography sx={{ fontWeight: 600 }}>
-            IFSC Code: <span style={{ fontWeight: 400 }}>ABCD12345678</span>
+            IFSC Code: <span style={{ fontWeight: 400 }}>IDFC0041382</span>
           </Typography>
           <Typography sx={{ fontWeight: 600 }}>
-            Branch: <span style={{ fontWeight: 400 }}>XYZ Bank</span>
+            Branch: <span style={{ fontWeight: 400 }}>Bhopal</span>
           </Typography>
         </Box>
       </Stack>
