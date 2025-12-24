@@ -35,7 +35,7 @@ const teamMembers = [
   },
   {
     img: JagratiImg,
-    name: "Dr. Jagriti Behrani",
+    name: "Dr. Jagrati Bahrani",
     post: "Public Health Consultant",
   },
   {
